@@ -5,7 +5,12 @@ import { Bank } from '../types/Bank';
 const BankItem = ({ bank }: { bank: Bank })  => {
   return (
     <View style={styles.card}>
-      <Image source={{ uri: bank.url }} style={styles.image} resizeMode="contain" />
+      <Image 
+        testID="bank-image" 
+        source={{ uri: bank.url }} 
+        style={styles.image} 
+        resizeMode="contain"
+       />
       <View style={styles.textContainer}>
         <Text style={styles.title}>{bank.bankName}</Text>
         <Text style={styles.description}>{bank.description}</Text>

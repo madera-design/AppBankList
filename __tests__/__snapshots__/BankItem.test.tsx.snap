@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BankItem Component matches snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "borderRadius": 12,
+      "elevation": 3,
+      "flexDirection": "row",
+      "marginVertical": 8,
+      "padding": 15,
+      "shadowColor": "#000",
+      "shadowOffset": {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 6,
+    }
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      {
+        "uri": "https://example.com/logo.png",
+      }
+    }
+    style={
+      {
+        "backgroundColor": "#eee",
+        "borderRadius": 30,
+        "height": 60,
+        "width": 60,
+      }
+    }
+    testID="bank-image"
+  />
+  <View
+    style={
+      {
+        "flex": 1,
+        "marginLeft": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#333",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Banco de Prueba
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#555",
+          "fontSize": 14,
+          "marginTop": 4,
+        }
+      }
+    >
+      Descripción de prueba
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#777",
+          "fontSize": 12,
+          "fontStyle": "italic",
+          "marginTop": 6,
+        }
+      }
+    >
+      Años en servicio: 
+      10
+    </Text>
+  </View>
+</View>
+`;

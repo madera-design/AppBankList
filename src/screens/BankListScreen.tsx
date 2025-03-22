@@ -29,7 +29,11 @@ const BankListScreen = () => {
     if (loading) {
       return (
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#4A90E2" />
+          <ActivityIndicator
+            testID="loading-indicator"
+            size="large" 
+            color="#4A90E2" 
+        />
         </View>
       );
     }
