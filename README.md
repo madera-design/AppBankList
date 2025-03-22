@@ -1,58 +1,65 @@
-BankListApp
-Descripción
-Aplicación en React Native que muestra una lista de bancos obtenidos desde una API. Los datos se almacenan localmente para su uso en visitas posteriores.
+# BankListApp
 
-Instalación
-Clona el repositorio:
+## Descripción
+BankListApp es una aplicación desarrollada en **React Native** que muestra una lista de bancos obtenidos desde una API. Los datos se almacenan localmente para su uso en visitas posteriores, permitiendo acceso sin conexión.
 
-Navega a la carpeta del proyecto:
-bash 
-git clone https://github.com/tu-usuario/BankListApp.git
+## Instalación
+Sigue estos pasos para instalar la aplicación:
 
-Instala las dependencias:
-bash
-cd BankListApp
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/BankListApp.git
+   ```
+2. Navega a la carpeta del proyecto:
+   ```bash
+   cd BankListApp
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-bash
-npm install
+## Ejecución
+Para ejecutar la aplicación en un emulador o dispositivo físico:
 
-Ejecución
-Ejecuta la aplicación en un emulador o dispositivo físico:
-
-Android:
-bash
+### Android
+```bash
 npx react-native run-android
+```
 
-iOS:
-bash
+### iOS
+```bash
 npx react-native run-ios
+```
 
-Dependencias
-axios: Para solicitudes HTTP.
+## Dependencias
+La aplicación utiliza las siguientes librerías:
+- **axios**: Para realizar solicitudes HTTP a la API.
+- **@react-native-async-storage/async-storage**: Para el almacenamiento local de datos.
 
-@react-native-async-storage/async-storage: Para almacenamiento local.
+## Arquitectura
+BankListApp sigue una arquitectura basada en componentes con una separación clara entre:
 
-Arquitectura
-La aplicación sigue una arquitectura basada en componentes, con una separación clara entre:
+- **Lógica de negocio**: Manejo de la API y almacenamiento local.
+- **Interfaz de usuario**: Componentes reutilizables y pantallas bien estructuradas.
 
-Lógica de negocio: Manejo de la API y almacenamiento local.
+## Problemas Conocidos
+Actualmente, la aplicación presenta las siguientes áreas de mejora:
+- **Pruebas unitarias**: No se han implementado pruebas unitarias.
+- **Manejo de errores**: La aplicación no maneja errores de red de manera robusta.
 
-Interfaz de usuario: Componentes reutilizables y pantallas.
+## Soluciones Propuestas
+Para mejorar la aplicación, se recomienda:
+- **Implementar pruebas unitarias** utilizando Jest y React Testing Library.
+- **Mejorar el manejo de errores** en las solicitudes HTTP para mejorar la experiencia del usuario.
 
-Problemas Conocidos
-Pruebas unitarias: No se han implementado pruebas unitarias.
+## Consideraciones Finales
+- **Testabilidad**: La estructura del código permite agregar pruebas unitarias para los componentes y la lógica de negocio.
+- **Escalabilidad**: La arquitectura modular facilita la adición de nuevas funcionalidades sin afectar el código existente.
+- **Mantenimiento**: Se recomienda el uso de TypeScript para mejorar la mantenibilidad y robustez del código.
 
-Manejo de errores: La aplicación no maneja errores de red de manera robusta.
+---
+_Contribuciones y sugerencias son bienvenidas. ¡Gracias por tu interés en BankListApp!_
 
-Soluciones Propuestas
-Pruebas unitarias: Implementar pruebas utilizando Jest y React Testing Library.
 
-Manejo de errores: Mejorar el manejo de errores en las solicitudes HTTP.
-
-Consideraciones Finales
-Testabilidad: La aplicación está diseñada para ser testeable. Puedes agregar pruebas unitarias para los componentes y la lógica de negocio.
-
-Escalabilidad: La estructura del proyecto permite agregar nuevas funcionalidades sin afectar el código existente.
-
-Mantenimiento: El uso de TypeScript y una arquitectura limpia facilita el mantenimiento del código.
 
