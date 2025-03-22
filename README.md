@@ -1,97 +1,58 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+BankListApp
+Descripción
+Aplicación en React Native que muestra una lista de bancos obtenidos desde una API. Los datos se almacenan localmente para su uso en visitas posteriores.
 
-# Getting Started
+Instalación
+Clona el repositorio:
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Navega a la carpeta del proyecto:
+bash 
+git clone https://github.com/tu-usuario/BankListApp.git
 
-## Step 1: Start Metro
+Instala las dependencias:
+bash
+cd BankListApp
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+bash
+npm install
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Ejecución
+Ejecuta la aplicación en un emulador o dispositivo físico:
 
-```sh
-# Using npm
-npm start
+Android:
+bash
+npx react-native run-android
 
-# OR using Yarn
-yarn start
-```
+iOS:
+bash
+npx react-native run-ios
 
-## Step 2: Build and run your app
+Dependencias
+axios: Para solicitudes HTTP.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+@react-native-async-storage/async-storage: Para almacenamiento local.
 
-### Android
+Arquitectura
+La aplicación sigue una arquitectura basada en componentes, con una separación clara entre:
 
-```sh
-# Using npm
-npm run android
+Lógica de negocio: Manejo de la API y almacenamiento local.
 
-# OR using Yarn
-yarn android
-```
+Interfaz de usuario: Componentes reutilizables y pantallas.
 
-### iOS
+Problemas Conocidos
+Pruebas unitarias: No se han implementado pruebas unitarias.
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Manejo de errores: La aplicación no maneja errores de red de manera robusta.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+Soluciones Propuestas
+Pruebas unitarias: Implementar pruebas utilizando Jest y React Testing Library.
 
-```sh
-bundle install
-```
+Manejo de errores: Mejorar el manejo de errores en las solicitudes HTTP.
 
-Then, and every time you update your native dependencies, run:
+Consideraciones Finales
+Testabilidad: La aplicación está diseñada para ser testeable. Puedes agregar pruebas unitarias para los componentes y la lógica de negocio.
 
-```sh
-bundle exec pod install
-```
+Escalabilidad: La estructura del proyecto permite agregar nuevas funcionalidades sin afectar el código existente.
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+Mantenimiento: El uso de TypeScript y una arquitectura limpia facilita el mantenimiento del código.
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
